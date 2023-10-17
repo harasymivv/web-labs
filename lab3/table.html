@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/table.css">
+    <meta charset="UTF-8">
+    <title>lab2</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td colspan = "2", class="thead_left_td">
+                <div>
+                    <h1>lorem</h1>
+                </div>
+                </td>
+                <td class="thead_right_td">
+                    <a href="mobile_main.html"><img class = "home" src="./src/house.png" alt="home"></a>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class = "menu_td">
+                    <img class= "page_img" src="./src/pages.png" alt = "Pages" usemap="#page">
+                    <map name = "page">
+                        <area shape="rect" title = "main(mobile version)" coords="0,0, 180, 45" href="mobile_main.html">
+                        <area shape="rect" title = "Flex" coords="0,50, 180, 90" href="flex.html">
+                        <area shape="rect" title = "Grid" coords="0,95, 180, 129" href="grid.html">
+                        <area shape="rect" title = "Table" coords="0,135, 180, 178" href="table.html">
+                    </map>
+            </td>
+            <td class="mid_td">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti quia dolores minus corporis ipsum ex quas laudantium iste veritatis ullam, similique nihil tempora in facere iure quos beatae quidem!</p>
+            </td>
+            <td class = "right_td", rowspan="2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sed quos rerum non ipsum, tenetur porro vel. Commodi, quam officiis!</p>
+            </td>
+        </tr>
+            <tr>
+                <td class = "bottom_td" colspan="2" >
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, suscipit! Laborum, repellat. Tempore omnis unde et eum incidunt? Unde, aspernatur!</p>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot> 
+            <td colspan="3">
+                <div>
+                    <h1>lorem</h1>
+                </div>
+            </td>
+        </tfoot>
+    </table>
+</body>
+</html>

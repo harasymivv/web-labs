@@ -1,0 +1,139 @@
+body, p, div{
+  margin: 0;
+}
+
+p{
+  font-family: serif;
+}
+
+header{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 30vh 0vh 30vh;
+}
+
+footer{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 70, 70);
+}
+
+
+.logo_text{
+  font-size: 22px;
+  color: rgba(77, 76, 76, 0.57);
+
+}
+
+.menu_icon{
+  height: 30px;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_pict{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bottom_1_cont, .bottom_2_cont{
+  display: inline-block;
+  text-align: center;
+}
+
+.bottom_1_cont p{
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  font-size: 4.5vh;
+  color: rgb(73, 73, 73);
+}
+
+.bottom_2_cont{
+  max-width: 70vh;
+}
+
+.bottom_2_cont p{
+  font-size: 1.7vh;
+  line-height: 3vh;
+  color: grey;
+}
+
+.bottom_3_cont {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin: 75px 0px 50px 0px;
+}
+
+
+.first_container, .second_container, .third_container, .fourth_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  border: rgb(201, 130, 0) 4px solid;
+  padding: 0px;
+  width: 14.5vh;
+  color: grey;
+  position: relative;
+}
+
+
+.first_container p{
+  margin: 0px 10px 0px 10px;
+}
+
+.bottom_3_cont div img{
+  height: 50px;
+}
+
+.solar-panel_left_icon, .renewable-energy_icon, .solar-panel_right_icon, .recycle_icon{
+  top: -3vh;
+  position: absolute;
+  background-color: white;
+  padding: 0px 15px 0px 15px;
+}
+
+footer p{
+  color: white;
+  font-size: 1.4vh;
+}
+
+@media screen and (max-width: 630px){
+
+  header{
+    padding: 0vh 3vh 0vh 3vh;
+  }
+
+  .main_pict{
+    height: 300px;
+  }
+
+  .bottom_3_cont {
+    flex-direction: column;
+    margin: 75px 0px 50px 0px;
+    height: auto;
+  }
+
+  .first_container, .second_container, .third_container, .fourth_container{
+    width: 23.5vh;
+    min-width: 10vh;
+    height: 8vh;
+    margin-top: 4vh;
+    align-items: end;
+    padding-bottom: 2vh;
+  }
+
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  </head>
+<body>
+  <header>
+    <div class="headline">
+      <h1 id="header">header</h1>
+    </div>
+    
+    <img class = "home" src="./src/house.png" alt="home">
+  </header>
+
+  <div class="main">
+
+    <div class="first_section" id="block2" onmouseover="applyStyle()">
+      <div class = "top_first">
+      <button onclick="swapHeaderFooter()">Swap Sections</button>
+      </div>
+
+      <div class = "middle_first">
+      <p class ="rhombus_text">Enter two diagonals to calculate an area of rhombus:</p>
+
+      <div class = "middle_first_left">
+      <input placeholder = "first diagonal" class="inp_first_diagonal"><br>
+      <input placeholder = "second diagonal" class="inp_second_diagonal">
+      </div>
+
+      <div class = "middle_first_right"><button onclick="calcRhombus()">Calculate</button></div>
+  </div>
+
+
+      <form id="styleForm" class="styleForm">
+        <label>
+          <input type="radio" name="styleOption" value="italic"> Italic
+        </label>
+        <label>
+          <input type="radio" name="styleOption" value="normal"> Normal
+        </label>
+      </form>
+
+      <p class = "text_block_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis error, corporis inventore doloremque magni reiciendis nemo nobis at beatae incidunt.</p>
+      
+      
+      <p id="clickableText1" class="clickable-text">Create list</p>
+      <div id="myMenu1" class="menu">
+
+      <label for="numRows1">Enter the number of rows:</label>
+      <input type="number" id="numRows1" min="1" value="6">
+      <button onclick="generateNumberedList(1)">Generate Numbered List</button>
+      <button onclick="saveListToLocalStorage(1)">Save to LocalStorage</button>
+      
+    </div>
+<div id="listBlock1"></div>
+</div>
+    <div class="second_section">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti quia dolores minus corporis ipsum ex quas laudantium iste veritatis ullam, similique nihil tempora in facere iure quos beatae quidem!</p>
+      <p class = "rhombus_answ"></p>
+
+      <form class="triangle_form">
+        <label>Enter three sides to see if you can build a triangle:</label><br>
+        <input placeholder = "first side" class="inp_first_side"><br>
+        <input placeholder = "second side" class="inp_second_side"><br>
+        <input placeholder = "third side" class="inp_third_side"><br>
+        <button class = "isTriangle_button" onclick="saveToCookies(event)">Calculate</button>
+      </form>
+
+        <p id="clickableText2" class="clickable-text">Create list</p>
+        <div id="myMenu2" class="menu">
+
+        <label for="numRows2">Enter the number of rows:</label>
+        <input type="number" id="numRows2" min="1" value="6">
+        <button onclick="generateNumberedList(2)">Generate Numbered List</button>
+        <button onclick="saveListToLocalStorage(2)">Save to LocalStorage</button>
+        
+      </div>
+  <div id="listBlock2"></div>
+
+    </div>
+    <div class="third_section">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sed quos rerum non ipsum, tenetur porro vel. Commodi, quam officiis!</p>
+
+      <p id="clickableText3" class="clickable-text">Create list</p>
+      <div id="myMenu3" class="menu">
+
+        <label for="numRows3">Enter the number of rows:</label>
+        <input type="number" id="numRows3" min="1" value="6">
+        <button onclick="generateNumberedList(3)">Generate Numbered List</button>
+        <button onclick="saveListToLocalStorage(3)">Save to LocalStorage</button>
+        
+      </div>
+  <div id="listBlock3"></div>
+  
+    </div>
+    <div class="fours_section">
+    
+      
+      <p id="clickableText4" class="clickable-text">Create list</p>
+      <div id="myMenu4" class="menu">
+
+        <label for="numRows4">Enter the number of rows:</label>
+        <input type="number" id="numRows4" min="1" value="9">
+        <button onclick="generateNumberedList(4)">Generate Numbered List</button>
+        <button onclick="saveListToLocalStorage(4)">Save to LocalStorage</button>
+        
+      </div>
+  <div id="listBlock4"></div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="headline">
+      <h1 id="footer">Footer</h1>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
